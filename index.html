@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритмы и структуры данных</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <h1>Алгоритмы и структуры данных</h1>
+            <p>Интерактивные карточки для изучения популярных алгоритмов и структур данных</p>
+        </header>
+        <div id="study-mode" class="mode-container active">
+            <div class="controls">
+                <button id="prevBtn" class="control-btn"><i class="fas fa-arrow-left"></i> Предыдущая</button>
+                <div class="progress-container">
+                    <div id="progress" class="progress-bar"></div>
+                </div>
+                <button id="nextBtn" class="control-btn">Следующая <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="flashcard">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <h2 id="questionText">Нажмите, чтобы начать</h2>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <p id="answerText">Нажмите "Следующая", чтобы начать изучение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="shuffleBtn" class="action-btn"><i class="fas fa-random"></i> Перемешать</button>
+                <button id="restartBtn" class="action-btn"><i class="fas fa-redo"></i> Начать заново</button>
+            </div>
+
+            <div class="card-status">
+                <span id="currentCard">0</span> / <span id="totalCards">0</span>
+            </div>
+        </div>
+
+        <div id="test-mode" class="mode-container">
+            <div class="test-header">
+                <h2>Проверьте свои знания</h2>
+                <p>Выберите правильный ответ для каждого вопроса</p>
+            </div>
+
+            <div class="test-progress">
+                <div class="test-progress-bar" id="testProgress"></div>
+                <span id="testQuestion">Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">10</span></span>
+            </div>
+
+            <div class="test-container">
+                <div class="test-question" id="testQuestionText"></div>
+                <div class="test-options" id="testOptions"></div>
+            </div>
+
+            <div class="test-controls">
+                <button id="submitAnswer" class="test-btn">Подтвердить ответ</button>
+            </div>
+
+            <div id="testResults" class="test-results">
+                <h3>Результаты теста</h3>
+                <div class="results-score">
+                    <span id="scoreText">0 из 0</span>
+                    <div class="score-bar">
+                        <div id="scoreProgress"></div>
+                    </div>
+                </div>
+                <div class="results-details" id="resultsDetails"></div>
+                <button id="restartTest" class="test-btn">Пройти тест заново</button>
+                <button id="backToCards" class="test-btn secondary">Вернуться к карточкам</button>
+            </div>
+        </div>
+
+        <div class="mode-switch">
+            <button id="startTest" class="switch-btn">Начать тестирование <i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="footer-link"><i class="fas fa-book"></i> Документация</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
