@@ -25,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, #f5f7fa 0%, #e1f5e1 100%);
+    background: linear-gradient(rgba(4, 181, 92, 0.7), rgba(255, 255, 255, 0.7)), url('wallpaper/background1.jpg');
     min-height: 100vh;
     padding: 20px;
 }
