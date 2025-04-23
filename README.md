@@ -1,2 +1,2 @@
 # test.github.io
-site
+site https://kkadzuto.github.io/test.github.io/#
